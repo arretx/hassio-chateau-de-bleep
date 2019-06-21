@@ -1,0 +1,41 @@
+living_area_fans:
+  name: Living Area Fans
+  entities:
+    - fan.living_room
+    - fan.kitchen
+  all: true
+
+bedroom_fans:
+  name: Bedroom Fans
+  entities:
+    - fan.master_bedroom
+    - fan.guest_bedroom
+  all: true
+
+bedroom_lights:
+  name: Bedroom Lights
+  entities:
+    - light.master_bedroom
+    - light.guest_bedroom
+  all: true
+
+bathroom_lights:
+  name: Bathroom Lights
+  entities: light.guest_bath
+  all: true
+
+outdoor_lights:
+  name: Outdoor Lights
+  entities:
+    - light.patio_lights
+  all: true
+
+living_area_lights:
+  name: Living Area Lights
+  entities:
+    - light.kitchen
+    - light.dining_room
+    - light.living_room
+    - light.living_room_fan
+    - light.entertainment_center
+  all: true

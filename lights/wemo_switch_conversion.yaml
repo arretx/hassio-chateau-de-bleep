@@ -1,0 +1,7 @@
+- platform: switch
+  name: Patio Lights
+  entity_id: switch.patio_lights
+
+- platform: switch
+  name: Entertainment Center
+  entity_id: switch.entertainment_center
