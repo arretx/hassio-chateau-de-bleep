@@ -1,0 +1,10 @@
+exclude:
+  domains:
+    - sun
+    - zone
+    - sensor
+    - binary_sensor
+    - input_number
+    - input_boolean
+    - group
+    - calendar

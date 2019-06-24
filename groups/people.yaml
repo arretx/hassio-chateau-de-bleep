@@ -2,5 +2,5 @@ family:
   name: Family
   entities:
     - person.jon_griffith
-    - person.jon_griffith
+    - person.melanie_griffith
   all: true

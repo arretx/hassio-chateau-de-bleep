@@ -1,0 +1,40 @@
+- platform: folder
+  folder: /config/www/sounds/coffee
+
+- platform: folder
+  folder: /config/www/images/icons
+
+- platform: folder
+  folder: /config/www/sounds/holidays/halloween
+
+- platform: folder
+  folder: /config/www/sounds/coffee_christmas
+
+- platform: folder
+  folder: /config/www/sounds/holidays/newyearseve
+
+- platform: folder
+  folder: /config/www/sounds/holidays/newyearsday
+
+- platform: folder
+  folder: /config/www/sounds/pepito
+
+- platform: template
+  sensors:
+    coffee_commercials:
+      friendly_name: Number of Coffee Commercials
+      value_template: "{{ states.sensor.coffee.attributes.number_of_files }}"
+    sensor_icons:
+      friendly_name: Number of Sensor Icons
+      value_template: "{{ states.sensor.icons.attributes.number_of_files }}"
+    halloween_sounds:
+      friendly_name: Number of Halloween Sounds
+      value_template: "{{ states.sensor.halloween.attributes.number_of_files }}"
+    christmas_coffee_commercials:
+      friendly_name: Number of Christmas Coffee Commercials
+      value_template: "{{ states.sensor.coffee_christmas.attributes.number_of_files }}"
+    newyearseve_sounds:
+      value_template: "{{ states.sensor.newyearseve.attributes.number_of_files }}"
+    pepito_sounds:
+      friendly_name: Number of Pepito Sounds
+      value_template: "{{ states.sensor.pepito.attributes.number_of_files }}"
