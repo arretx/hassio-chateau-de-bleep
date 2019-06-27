@@ -1,0 +1,57 @@
+esphome:
+  name: sensor_guest_bath
+  platform: ESP8266
+  board: d1_mini
+
+wifi:
+  ssid: "aGriffithListing"
+  password: "babyfields"
+  manual_ip:
+    static_ip: 192.168.1.120
+    gateway: 192.168.1.1
+    subnet: 255.255.255.0
+
+mqtt:
+  broker: 192.168.1.100
+  username: jgriffith
+  password: 488GvgHUy^FJh^7Ax7
+  
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+
+sensor:
+  - platform: dht
+    pin: D7
+    temperature:
+      name: "Thermometer Guest Bath"
+      unit_of_measurement: "°F"
+      filters:
+        - lambda: return x * (9.0/5.0) + 32.0;
+    humidity:
+      name: "Humidity Guest Bath"
+    model: AM2302
+    update_interval: 8s
+  - platform: adc
+    pin: A0
+    name: "Light Level Guest Bath"
+    update_interval: 10s
+
+binary_sensor:
+  - platform: gpio
+    pin: D5
+    name: "Motion 1 Guest Bath"
+    device_class: motion
+  - platform: gpio
+    pin: D6
+    name: "Motion 2 Guest Bath"
+    device_class: motion
+  
+switch:
+  - platform: gpio
+    pin: 5
+    name: "Guest Bathroom Aux Light"  

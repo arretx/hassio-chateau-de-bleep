@@ -19,19 +19,22 @@ tts: !include_dir_merge_list tts/ # Text to speech
 recorder: !include_dir_merge_named recorder/ # Historical Data
 history: !include_dir_merge_list history/
 octoprint: !include_dir_merge_named octoprint/ # 3D Printer
-device_tracker: !include_dir_merge_list device_tracker/ # Device Tracking
 light: !include_dir_merge_list lights/ # Light Switches
 switch: !include_dir_merge_list switches/
 sensor: !include_dir_merge_list sensors/
+binary_sensor: !include_dir_merge_list binary_sensors/
 neato: !include_dir_merge_named robots/
 media_player: !include_dir_merge_list media_players/
 logbook: !include_dir_merge_named logbook/
 google: !include_dir_merge_named google/
+input_boolean: !include_dir_merge_named input_boolean/
+life360: !include_dir_merge_named life360/
 mqtt:
   broker: !secret mqtt_broker
   discovery: true
   username: !secret mqtt_username
   password: !secret mqtt_password
+  discovery_prefix: homeassistant
 
 custom_updater:
   track:

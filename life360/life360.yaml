@@ -1,0 +1,3 @@
+accounts:
+  - username: !secret life360_username_1
+    password: !secret life360_password_1

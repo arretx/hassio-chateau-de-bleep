@@ -1,0 +1,105 @@
+
+- cal_id: melanie@jongriffith.com
+  entities:
+  - device_id: melanie_jongriffith_com
+    ignore_availability: true
+    name: melanie@jongriffith.com
+    track: true
+
+- cal_id: 3oj1g2pe5lik9j1btja4jtkskds37qja@import.calendar.google.com
+  entities:
+  - device_id: toews_garcia_gospel_community
+    ignore_availability: true
+    name: Toews / Garcia Gospel Community
+    track: true
+
+- cal_id: qf0p8a5ia13fic0r7553eh7qh0@group.calendar.google.com
+  entities:
+  - device_id: nvc_staff
+    ignore_availability: true
+    name: NVC Staff
+    track: true
+
+- cal_id: jon@jongriffith.com
+  entities:
+  - device_id: jon_griffith
+    ignore_availability: true
+    name: Jon Griffith
+    track: true
+
+- cal_id: jongriffith.com_e44jnrictvidoteslch2chg28s@group.calendar.google.com
+  entities:
+  - device_id: rehearsal_schedule
+    ignore_availability: true
+    name: Rehearsal Schedule
+    track: true
+
+- cal_id: jongriffith.com_2eg5toejb1emh0gc3tc5176ju8@group.calendar.google.com
+  entities:
+  - device_id: appointment_booking
+    ignore_availability: true
+    name: Appointment Booking
+    track: true
+
+- cal_id: is9s38sb48smqu6c3qr5q9u5hcml36hk@import.calendar.google.com
+  entities:
+  - device_id: full_calendar_the_griffith_family_event_calendar
+    ignore_availability: true
+    name: '(Full Calendar) The Griffith Family : Event Calendar'
+    track: true
+
+- cal_id: r4ja05c90ndj4pocp76a01tmjm5h5de6@import.calendar.google.com
+  entities:
+  - device_id: around_the_house_via_asana
+    ignore_availability: true
+    name: Around the House (via Asana)
+    track: true
+
+- cal_id: 62qhubfv5nr60bu1cl94lcahie8ue008@import.calendar.google.com
+  entities:
+  - device_id: full_calendar_new_valley_church_event_calendar
+    ignore_availability: true
+    name: '(Full Calendar) New Valley Church : Event Calendar'
+    track: true
+
+- cal_id: jongriffith.com_hqkoc8b681rfutpjqicsssl9hs@group.calendar.google.com
+  entities:
+  - device_id: annual_business_expenses
+    ignore_availability: true
+    name: Annual Business Expenses
+    track: true
+
+- cal_id: ebjjp0b7r7j41dtkcs4cj0acns62jh34@import.calendar.google.com
+  entities:
+  - device_id: new_valley_church_jon_griffith
+    ignore_availability: true
+    name: 'New Valley Church: Jon Griffith'
+    track: true
+
+- cal_id: jongriffith.com_u4iqmq6hadm3aas8ubslssee3o@group.calendar.google.com
+  entities:
+  - device_id: cgroup
+    ignore_availability: true
+    name: cGroup
+    track: true
+
+- cal_id: j6l4o6tgbgrnta5qtktdkej7grfk4vlm@import.calendar.google.com
+  entities:
+  - device_id: my_calendar_new_valley_church_event_calendar
+    ignore_availability: true
+    name: '(My Calendar) New Valley Church : Event Calendar'
+    track: true
+
+- cal_id: en.usa#holiday@group.v.calendar.google.com
+  entities:
+  - device_id: holidays_in_united_states
+    ignore_availability: true
+    name: Holidays in United States
+    track: true
+
+- cal_id: 2qmn1qg70k2fjucrnkrclg11mdoufvo1@import.calendar.google.com
+  entities:
+  - device_id: my_calendar_the_griffith_family_event_calendar
+    ignore_availability: true
+    name: '(My Calendar) The Griffith Family : Event Calendar'
+    track: true

@@ -1,0 +1,6 @@
+- platform: mqtt
+  state_topic: "door1/send"
+  name: Door 1
+  value_template: "{{ value_json.type }}"
+  json_attributes_topic: "door1/send"
+  json_attributes_template: "{{ value_json | tojson }}"

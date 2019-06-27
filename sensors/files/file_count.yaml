@@ -17,6 +17,9 @@
   folder: /config/www/sounds/holidays/newyearsday
 
 - platform: folder
+  folder: /config/www/sounds/holidays/independence
+
+- platform: folder
   folder: /config/www/sounds/pepito
 
 - platform: template
@@ -35,6 +38,8 @@
       value_template: "{{ states.sensor.coffee_christmas.attributes.number_of_files }}"
     newyearseve_sounds:
       value_template: "{{ states.sensor.newyearseve.attributes.number_of_files }}"
+    independence_sounds:
+      value_template: "{{ states.sensor.independence.attributes.number_of_files }}"
     pepito_sounds:
       friendly_name: Number of Pepito Sounds
       value_template: "{{ states.sensor.pepito.attributes.number_of_files }}"

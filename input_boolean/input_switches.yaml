@@ -1,0 +1,4 @@
+bath_time:
+  name: Bath Time
+  initial: off
+  icon: mdi:shower
