@@ -5,5 +5,13 @@ exclude:
   domains:
     - automation
     - zwave
+    - calendar
+    - weather
+    - sun
+    - group
+    - calendar
+    - zwave
+    - script
+    - zone
   entities:
     - sun.sun

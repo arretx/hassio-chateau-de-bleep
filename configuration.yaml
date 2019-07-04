@@ -29,6 +29,9 @@ logbook: !include_dir_merge_named logbook/
 google: !include_dir_merge_named google/
 input_boolean: !include_dir_merge_named input_boolean/
 life360: !include_dir_merge_named life360/
+panel_iframe: !include_dir_merge_named panel_iframe/
+
+#logger:
 mqtt:
   broker: !secret mqtt_broker
   discovery: true

@@ -6,6 +6,7 @@
 .storage
 *.Trash*
 *.trashinfo
+esphome/camera*
 __pycache__
 node-red
 octoprint
@@ -22,3 +23,8 @@ secrets*
 zw*.xml
 sounds
 images
+.google.token
+.spotify-token-cache
+google_calendars.yaml
+groups/people.yaml
+cast/google.yaml
