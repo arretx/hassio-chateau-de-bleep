@@ -1,0 +1,5 @@
+- platform: iphonedetect
+  consider_home: 60
+  new_device_defaults:
+    track_new_devices: true
+    hide_if_away: false

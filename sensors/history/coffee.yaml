@@ -1,0 +1,31 @@
+- platform: history_stats
+  name: Cups of Coffee Made
+  entity_id: switch.coffee_maker
+  state: 'on'
+  type: count
+  start: '{{ 0 }}'
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: Cups of Coffee This Week
+  entity_id: switch.coffee_maker
+  state: 'on'
+  type: count
+  start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}'
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: Cups of Coffee This Month
+  entity_id: switch.coffee_maker
+  state: 'on'
+  type: count
+  start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().day * 86400 }}'
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: Cups of Coffee This Year
+  entity_id: switch.coffee_maker
+  state: 'on'
+  type: count
+  start: "{{ as_timestamp(now().replace(month=1).replace(day=1).replace(hour=0).replace(minute=0).replace(second=0) ) - (now().strftime('%j') | int * 86400) }}"
+  end: '{{ now() }}'

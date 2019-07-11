@@ -28,3 +28,8 @@ images
 google_calendars.yaml
 groups/people.yaml
 cast/google.yaml
+hacs/
+*.js
+*.js.*
+glances.conf
+custom_components/

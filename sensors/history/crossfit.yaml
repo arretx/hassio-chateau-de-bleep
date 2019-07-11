@@ -1,0 +1,63 @@
+- platform: history_stats
+  name: Total CrossFit Workouts Jon
+  entity_id: device_tracker.life360_jon
+  state: 'CFIS'
+  type: count
+  start: '{{ 0 }}'
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: Total CrossFit Workouts Melanie
+  entity_id: device_tracker.life360_melanie_griffith
+  state: 'CFIS'
+  type: count
+  start: '{{ 0 }}'
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: CrossFit This Month Jon
+  entity_id: device_tracker.life360_jon
+  state: 'CFIS'
+  type: count
+  start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().day * 86400 }}'
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: CrossFit This Month Melanie
+  entity_id: device_tracker.life360_melanie_griffith
+  state: 'CFIS'
+  type: count
+  start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().day * 86400 }}'
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: CrossFit This Week Jon
+  entity_id: device_tracker.life360_jon
+  state: 'CFIS'
+  type: count
+  start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}'
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: CrossFit This Week Melanie
+  entity_id: device_tracker.life360_melanie_griffith
+  state: 'CFIS'
+  type: count
+  start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}'
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: CrossFit This Year Jon
+  entity_id: device_tracker.life360_melanie_griffith
+  state: 'CFIS'
+  type: count
+  start: "{{ as_timestamp(now().replace(month=1).replace(day=1).replace(hour=0).replace(minute=0).replace(second=0) ) - (now().strftime('%j') | int * 86400) }}"
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: CrossFit This Year Melanie
+  entity_id: device_tracker.life360_melanie_griffith
+  state: 'CFIS'
+  type: count
+  start: "{{ as_timestamp(now().replace(month=1).replace(day=1).replace(hour=0).replace(minute=0).replace(second=0) ) - (now().strftime('%j') | int * 86400) }}"
+  end: '{{ now() }}'
