@@ -1,0 +1,20 @@
+{
+    "files.exclude": {
+        ".spotify*": true,
+        "*.conf": true,
+        "*.db": true,
+        "*.google.*": true,
+        "*.ios*": true,
+        "*.xml": true,
+        "**/.cloud": true,
+        "**/.HA_VERSION": true,
+        "**/.storage": true,
+        "**/.Trash*": true,
+        "**/.uuid": true,
+        "**/.vscode": true,
+        "*zw*": true,
+        "OZW*": true,
+        "py*.sqlite": true,
+        "READ*.md": true
+    }
+}
