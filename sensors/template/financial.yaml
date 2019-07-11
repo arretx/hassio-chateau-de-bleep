@@ -1,0 +1,8 @@
+- platform: template
+  sensors:  
+    cost_per_visit_jon:
+      friendly_name: "CrossFit Cost Per Visit Jon"
+      value_template: "${{ (states('input_text.crossfit_monthly_fee') | int / states('sensor.crossfit_this_year_jon') | int) | round(2) }}"
+    cost_per_visit_melanie:
+      friendly_name: "CrossFit Cost Per Visit Melanie"
+      value_template: "${{ (states('input_text.crossfit_monthly_fee') | int / states('sensor.crossfit_this_year_melanie') | int) | round(2) }}"

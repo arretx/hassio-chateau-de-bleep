@@ -1,3 +1,5 @@
+## Counts
+
 - platform: history_stats
   name: Total CrossFit Workouts Jon
   entity_id: device_tracker.life360_jon
@@ -59,5 +61,71 @@
   entity_id: device_tracker.life360_melanie_griffith
   state: 'CFIS'
   type: count
+  start: "{{ as_timestamp(now().replace(month=1).replace(day=1).replace(hour=0).replace(minute=0).replace(second=0) ) - (now().strftime('%j') | int * 86400) }}"
+  end: '{{ now() }}'
+
+# Hours
+
+- platform: history_stats
+  name: Total Time at CFIS Jon
+  entity_id: device_tracker.life360_jon
+  state: 'CFIS'
+  type: time
+  start: '{{ 0 }}'
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: Total Time at CFIS Melanie
+  entity_id: device_tracker.life360_melanie_griffith
+  state: 'CFIS'
+  type: time
+  start: '{{ 0 }}'
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: CrossFit Hours This Month Jon
+  entity_id: device_tracker.life360_jon
+  state: 'CFIS'
+  type: time
+  start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().day * 86400 }}'
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: CrossFit Hours This Month Melanie
+  entity_id: device_tracker.life360_melanie_griffith
+  state: 'CFIS'
+  type: time
+  start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().day * 86400 }}'
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: CrossFit Hours This Week Jon
+  entity_id: device_tracker.life360_jon
+  state: 'CFIS'
+  type: time
+  start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}'
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: CrossFit Hours This Week Melanie
+  entity_id: device_tracker.life360_melanie_griffith
+  state: 'CFIS'
+  type: time
+  start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}'
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: CrossFit Hours This Year Jon
+  entity_id: device_tracker.life360_melanie_griffith
+  state: 'CFIS'
+  type: time
+  start: "{{ as_timestamp(now().replace(month=1).replace(day=1).replace(hour=0).replace(minute=0).replace(second=0) ) - (now().strftime('%j') | int * 86400) }}"
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: CrossFit Hours This Year Melanie
+  entity_id: device_tracker.life360_melanie_griffith
+  state: 'CFIS'
+  type: time
   start: "{{ as_timestamp(now().replace(month=1).replace(day=1).replace(hour=0).replace(minute=0).replace(second=0) ) - (now().strftime('%j') | int * 86400) }}"
   end: '{{ now() }}'
