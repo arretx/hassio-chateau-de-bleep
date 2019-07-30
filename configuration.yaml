@@ -34,6 +34,7 @@ panel_iframe: !include_dir_merge_named panel_iframe/
 influxdb: !include_dir_merge_named influxdb/
 hacs: !include_dir_merge_named hacs/
 device_tracker: !include_dir_merge_named device_tracker/
+apple_tv: !include_dir_merge_list apple_tv/
 
 mqtt:
   broker: !secret mqtt_broker

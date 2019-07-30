@@ -1,1 +1,13 @@
-## You won't see anything here.  I use NodeRED for all of my automations.
+- alias: Startup Notification
+  hide_entry: True
+  trigger:
+    - platform: homeassistant
+      event: start
+  action:
+    - service: tts.google_translate_say
+      entity_id: media_player.kitchen_speaker
+      data:
+        message: 'Home Assistant Online'
+
+
+

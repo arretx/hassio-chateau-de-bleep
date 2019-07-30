@@ -3,5 +3,10 @@
   client_secret: !secret spotify_client_secret
 
 - platform: samsungtv
-  host: 192.168.1.8
+  host: !secret samsung_tv_1_host_ip
+  name: Samsung TV
   mac: 0C:89:10:7E:0C:72
+
+- platform: volumio
+  host: !secret volumio_host_ip
+  port: 3000
