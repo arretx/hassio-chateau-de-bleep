@@ -1,4 +1,3 @@
-
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
@@ -31,17 +30,18 @@ input_boolean: !include_dir_merge_named input_boolean/
 input_text: !include_dir_merge_named input_text/
 life360: !include_dir_merge_named life360/
 panel_iframe: !include_dir_merge_named panel_iframe/
-influxdb: !include_dir_merge_named influxdb/
+#influxdb: !include_dir_merge_named influxdb/
 hacs: !include_dir_merge_named hacs/
 device_tracker: !include_dir_merge_named device_tracker/
 apple_tv: !include_dir_merge_list apple_tv/
+climate: !include_dir_merge_list climate/
 
-mqtt:
-  broker: !secret mqtt_broker
-  discovery: true
-  username: !secret mqtt_username
-  password: !secret mqtt_password
-  discovery_prefix: homeassistant
+#mqtt:
+#  broker: !secret mqtt_broker
+#  discovery: true
+#  username: !secret mqtt_username
+#  password: !secret mqtt_password
+#  discovery_prefix: homeassistant
 
 person:
 system_health:

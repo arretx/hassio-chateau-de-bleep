@@ -1,17 +1,29 @@
 db_url: !secret mysql_db_url
 purge_keep_days: 365
 purge_interval: 1
+include:
+  domains:
+    - person
+    - camera
+    - vacuum
+    - switch
+    - fan
+    - light
+    - alarm_control_panel
+    - automation
+    - binary_sensor
+    - camera
+    - input_number
+    - media_player
+  entities:
+    - sensor.ender3_switch
+    - sensor.coffee_maker_status
+    - sensor.desklamp1_status
+    - sensor.dark_sky_temperature
+    - sensor.candle_warmer1_switch
+    - sensor.reading_lamp_1_status
+    - sensor.candle_warmer1_switch
+    - sensor.botvac_battery
 exclude:
   domains:
-    - automation
-    - zwave
-    - calendar
-    - weather
-    - sun
-    - group
-    - calendar
-    - zwave
-    - script
-    - zone
-  entities:
-    - sun.sun
+    - device_tracker

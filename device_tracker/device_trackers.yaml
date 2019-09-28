@@ -1,5 +1,18 @@
-- platform: iphonedetect
-  consider_home: 60
-  new_device_defaults:
-    track_new_devices: true
-    hide_if_away: false
+- platform: nmap_tracker
+  hosts: 192.168.1.0/24
+  home_interval: 1
+  exclude:
+    - 192.168.1.30
+    - 192.168.1.41
+    - 192.168.1.42
+    - 192.168.1.43
+    - 192.168.1.100
+    - 192.168.1.1
+    - 192.168.1.3
+    - 192.168.1.4
+
+#- platform: iphonedetect
+#  consider_home: 60
+#  new_device_defaults:
+#    track_new_devices: true
+#    hide_if_away: false

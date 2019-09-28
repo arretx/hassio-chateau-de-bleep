@@ -8,5 +8,19 @@
   mac: 0C:89:10:7E:0C:72
 
 - platform: volumio
-  host: !secret volumio_host_ip
+  name: SoundFX
+  host: !secret volumio_host_ip_1
   port: 3000
+
+- platform: volumio
+  name: Music
+  host: !secret volumio_host_ip_2
+  port: 3000
+
+#- platform: mpd
+#  name: volumio_1_mpd
+#  host: !secret volumio_host_ip_1
+
+#- platform: mpd
+#  name: volumio_2_mpd
+#  host: !secret volumio_host_ip_2

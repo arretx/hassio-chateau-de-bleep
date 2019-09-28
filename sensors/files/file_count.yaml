@@ -5,19 +5,16 @@
   folder: /config/www/images/icons
 
 - platform: folder
-  folder: /config/www/sounds/holidays/halloween
+  folder: /config/www/sounds/coffee/halloween
 
 - platform: folder
-  folder: /config/www/sounds/coffee_christmas
+  folder: /config/www/sounds/coffee/christmas
 
 - platform: folder
   folder: /config/www/sounds/holidays/newyearseve
 
 - platform: folder
   folder: /config/www/sounds/holidays/newyearsday
-
-- platform: folder
-  folder: /config/www/sounds/holidays/independence
 
 - platform: folder
   folder: /config/www/sounds/pepito

@@ -15,3 +15,6 @@ test_1:
 test_2:
   name: Test 2
   initial: off
+
+jons_kitchen_lighting:
+  name: Jon's Kitchen Lighting
