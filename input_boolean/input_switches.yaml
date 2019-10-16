@@ -5,7 +5,6 @@ bath_time:
 
 vacation_mode:
   name: Vacation Mode
-  initial: off
   icon: mdi:sailing
 
 test_1:

@@ -1,0 +1,12 @@
+ceiling_fan_temp:
+  name: Ceiling Fan Start Temp
+  min: 75
+  max: 85
+  step: 1
+
+sun_down_target:
+  name: Sun Angle Target
+  initial: 4
+  min: 2
+  max: 20
+  step: 1
