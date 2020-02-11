@@ -1,0 +1,29 @@
+2020-01-14 14:46:43 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you do experience issues with Home Assistant.
+2020-01-14 14:46:51 ERROR (MainThread) [homeassistant.components.calendar] google: Error on device update!
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 292, in _async_add_entity
+    await entity.async_device_update(warning=False)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 461, in async_device_update
+    await self.hass.async_add_executor_job(self.update)
+  File "/usr/local/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/google/calendar.py", line 106, in update
+    self.data.update()
+  File "/usr/src/homeassistant/homeassistant/util/__init__.py", line 240, in wrapper
+    result = method(*args, **kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/google/calendar.py", line 175, in update
+    result = events.list(**params).execute()
+  File "/usr/local/lib/python3.7/site-packages/oauth2client/_helpers.py", line 133, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/googleapiclient/http.py", line 842, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 404 when requesting https://www.googleapis.com/calendar/v3/calendars/3oj1g2pe5lik9j1btja4jtkskds37qja%40import.calendar.google.com/events?orderBy=startTime&maxResults=5&singleEvents=true&timeMin=2020-01-14T14%3A46%3A50.893910-07%3A00&alt=json returned "Not Found">
+2020-01-14 14:46:59 WARNING (MainThread) [homeassistant.components.template.sensor] Could not render template Number of Christmas Coffee Commercials, the state is unknown.
+2020-01-14 14:46:59 WARNING (MainThread) [homeassistant.components.template.sensor] Could not render template independence_sounds, the state is unknown.
+2020-01-14 14:46:59 WARNING (MainThread) [homeassistant.components.template.sensor] Could not render template Pepito's Battery, the state is unknown.
+2020-01-14 14:46:59 WARNING (MainThread) [homeassistant.components.template.sensor] Could not render icon template Pepito's Battery, the state is unknown.
+2020-01-14 14:47:02 ERROR (Thread-4) [pychromecast.socket_client] [192.168.1.203:8009] Failed to connect, retrying in 5.0s
+2020-01-14 14:47:02 ERROR (Thread-5) [pychromecast.socket_client] [192.168.1.204:8009] Failed to connect, retrying in 5.0s
+2020-01-14 14:47:15 ERROR (MainThread) [hacs] You have maykar/compact-custom-header installed with HACS, this repositroy have not been blacklisted, please consider removing it.
+2020-01-14 14:59:15 ERROR (Thread-4) [pychromecast.socket_client] [192.168.1.203:8009] Failed to connect. No retries.
+2020-01-14 14:59:15 ERROR (Thread-5) [pychromecast.socket_client] [192.168.1.204:8009] Failed to connect. No retries.

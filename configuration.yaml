@@ -17,7 +17,7 @@ weather: !include_dir_merge_list weather/ # Weather Tracking
 tts: !include_dir_merge_list tts/ # Text to speech
 recorder: !include_dir_merge_named recorder/ # Historical Data
 history: !include_dir_merge_list history/
-octoprint: !include_dir_merge_named octoprint/ # 3D Printer
+#octoprint: !include_dir_merge_named octoprint/ # 3D Printer
 light: !include_dir_merge_list lights/ # Light Switches
 switch: !include_dir_merge_list switches/
 sensor: !include_dir_merge_list sensors/
@@ -36,6 +36,7 @@ hacs: !include_dir_merge_named hacs/
 device_tracker: !include_dir_merge_named device_tracker/
 apple_tv: !include_dir_merge_list apple_tv/
 climate: !include_dir_merge_list climate/
+spotify: !include_dir_merge_named spotify/
 
 #mqtt:
 #  broker: !secret mqtt_broker

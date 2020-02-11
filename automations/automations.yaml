@@ -1,5 +1,4 @@
 - alias: Startup Notification
-  hide_entry: True
   trigger:
     - platform: homeassistant
       event: start

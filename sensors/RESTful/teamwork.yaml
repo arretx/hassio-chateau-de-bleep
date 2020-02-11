@@ -1,12 +1,16 @@
-#- platform: rest
-#  resource: !secret teamwork_tasks_url
-#  method: GET
-#  name: tasks
-#  authentication: basic
-#  username: !secret teamwork_auth
-#  password: X
-#  json_attributes:
-#    - todo-items
+- platform: rest
+  resource: !secret teamwork_nv_tasks_url
+  name: tasks
+  authentication: basic
+  username: !secret teamwork_nv_auth
+  password: X
+  json_attributes:
+    - todo-items
+  value_template: 'OK'
+- platform: template
+  sensors:
+    todo_items:
+      value_template: '{{ states.sensor.tasks.attributes["todo-items"][0]["content"] }}'
 
 # id = task number.
 # project-id = project

@@ -12,7 +12,7 @@ wifi:
     subnet: 255.255.255.0
 
 mqtt:
-  broker: 192.168.1.100
+  broker: 192.168.1.101
   username: jgriffith
   password: 488GvgHUy^FJh^7Ax7
   

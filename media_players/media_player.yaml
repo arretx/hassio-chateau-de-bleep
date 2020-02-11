@@ -1,12 +1,3 @@
-- platform: spotify
-  client_id: !secret spotify_client_id
-  client_secret: !secret spotify_client_secret
-
-- platform: samsungtv
-  host: !secret samsung_tv_1_host_ip
-  name: Samsung TV
-  mac: 0C:89:10:7E:0C:72
-
 - platform: volumio
   name: SoundFX
   host: !secret volumio_host_ip_1
